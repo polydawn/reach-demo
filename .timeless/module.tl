@@ -13,8 +13,7 @@
 				"action": {
 					"exec": [
 						"/bin/bash", "-c",
-						"echo hello | tee /task/log"
-						"ls src | tee /task/log"
+						"{ echo hihi; ls src ;} | tee /task/log"
 					]
 				},
 				"outputs": {
