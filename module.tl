@@ -7,8 +7,8 @@
 		"main": {
 			"operation": {
 				"inputs": {
-					"base": "/",
-					"src": "/task/src"
+					"/": "base",
+					"/task/src": "src"
 				},
 				"action": {
 					"exec": [
