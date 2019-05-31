@@ -1,28 +1,20 @@
 {
 	"imports": {
 		"base": "catalog:early.polydawn.io/monolith/busybash:v1:linux-amd64",
-		"src": "ingest:git:.:HEAD"
 	},
 	"steps": {
 		"main": {
 			"operation": {
 				"inputs": {
 					"/": "base",
-					"/task/src": "src"
 				},
 				"action": {
 					"exec": [
-						"/bin/bash", "-c",
-						"{ echo hihi; ls src ;} | tee /task/log"
+						"/bin/echo", "-e",
+						"Hello!  You did it!\n Now proceed into the deeper directories and try `reach emerge` on\n  those modules as well to see cooler and cooler examples."
 					]
-				},
-				"outputs": {
-					"log": "/task/log"
 				}
 			}
 		}
-	},
-	"exports": {
-		"log": "main.log"
 	}
 }
